@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arham Farooq - Futuristic Matrix Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+</head>
+<body class="dark-theme">
+    <div id="matrix-rain"></div>
+    
+    <div id="loading-screen">
+        <video id="loading-video" autoplay muted loop>
+            <source src="Arham Farooq.mp4" type="video/mp4">
+        </video>
+        <div class="loading-content">
+            <h1 class="glitch" data-text="Initializing">Arham Farooq</h1>
+            <div class="progress-bar"><div class="progress"></div></div>
+        </div>
+    </div>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home" data-text="Home">Home</a></li>
+                <li><a href="#about" data-text="About">About</a></li>
+                <li><a href="#skills" data-text="Skills">Skills</a></li>
+                <li><a href="#projects" data-text="Projects">Projects</a></li>
+                <li><a href="#experience" data-text="Experience">Experience</a></li>
+                <li><a href="#contact" data-text="Contact">Contact</a></li>
+                <li><a href="#game" data-text="Game">Game</a></li>
+            </ul>
+        </nav>
+        <div class="theme-toggle">
+            <input type="checkbox" id="theme-switch" class="theme-switch">
+            <label for="theme-switch" class="switch-label">
+                <span class="sun"><i class="fas fa-sun"></i></span>
+                <span class="moon"><i class="fas fa-moon"></i></span>
+            </label>
+        </div>
+        <div class="music-toggle">
+            <button id="toggleMusic">
+                <i class="fas fa-volume-up"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="content">
+                <h1 class="main-title">Welcome to the Matrix</h1>
+                <p class="subtitle">Exploring the Digital Frontier</p>
+                <a href="#contact" class="cta-button">Jack In</a>
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <div class="arrow"></div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h2 class="section-title" data-text="The One">The One</h2>
+                <div class="profile-container">
+                    <div class="glitch-image">
+                        <img src="IMG-20210804-WA0057 (1).jpg" alt="Arham Farooq" class="profile-picture">
+                    </div>
+                </div>
+                <p class="bio">Passionate about both programming and cybersecurity, I possess a keen eye for user-centric design and a talent for crafting immersive digital experiences. Skilled in Python, HTML, CSS, and JavaScript, I specialize in translating creative concepts into responsive and interactive web applications. Simultaneously, my dedication to cybersecurity ensures the integrity and safety of digital environments. With a focus on clean code and intuitive UI/UX design, I strive to create engaging interfaces that captivate audiences and drive user engagement. Continuously exploring new technologies and trends, I remain committed to staying ahead of the curve in both frontend development and cybersecurity, delivering cutting-edge solutions that push the boundaries of digital innovation. Additionally, my expertise in Python enables me to develop robust backend systems that power seamless user experiences and enhance the security of digital platforms.</p>
+                <div class="tech-stack">
+                    <span class="tech-item">HTML</span>
+                    <span class="tech-item">CSS</span>
+                    <span class="tech-item">JavaScript</span>
+                    <span class="tech-item">Linux</span>
+                    <span class="tech-item">Ethical Hacking</span>
+                    <span class="tech-item">Python</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="container">
+                <h2 class="section-title" data-text="Skill Matrix">Skill Matrix</h2>
+                <div id="skills-grid"></div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="container">
+                <h2 class="section-title" data-text="Digital Constructs">Digital Constructs</h2>
+                <div class="project-showcase">
+                    <div class="project-card">
+                        <div class="project-content">
+                            <h3>Project Alpha</h3>
+                            <p>A reality-bending web application</p>
+                            <a href="#" class="project-link">Explore</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-content">
+                            <h3>Project Beta</h3>
+                            <p>Quantum-inspired algorithm visualization</p>
+                            <a href="#" class="project-link">Explore</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-content">
+                            <h3>Project Gamma</h3>
+                            <p>Neural network for predicting digital anomalies</p>
+                            <a href="#" class="project-link">Explore</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience">
+            <div class="container">
+                <h2 class="section-title" data-text="Timeline">Timeline</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>Beginner Python Programmer</h3>
+                            <p>Sir Syed University</p>
+                            <span class="date">2023</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>Beginner Python Programmer</h3>
+                            <p>University of Michigan</p>
+                            <span class="date">2023</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>Advanced Python Programmer</h3>
+                            <p>Sir Syed University</p>
+                            <span class="date">2024</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2 class="section-title" data-text="Establish Connection">Establish Connection</h2>
+                <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                    <input type="hidden" name="access_key" value="2152d671-5e7a-48d9-83c9-8f4e92481b0b">
+                    <div class="form-group">
+                        <input type="text" name="name" required id="name">
+                        <label for="name">Your Alias</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" required id="email">
+                        <label for="email">Your Access Point</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" required id="message"></textarea>
+                        <label for="message">Your Transmission</label>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <span>Transmit</span>
+                        <div class="btn-glitch"></div>
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <section id="game">
+            <div class="container">
+                <h2 class="section-title" data-text="Matrix Runner">Matrix Runner</h2>
+                <div class="game-container">
+                    <canvas id="gameCanvas"></canvas>
+                    <div class="game-controls">
+                        <button id="startGame">Start Game</button>
+                        <p>Press Space to jump</p>
+                        <p>Score: <span id="score">0</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Arham Farooq. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="cursor"></div>
+    <div id="cursor-blur"></div>
+
+    <audio id="backgroundMusic" loop>
+        <source src="calm-soul-meditation-247330.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
